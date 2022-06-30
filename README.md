@@ -17,7 +17,7 @@ uvicorn main:app --reload
 
 ## How to add objects to database
 
-Add json files to folder json, their name will be used as ID, so make sure they are named after last object in db (If unsure add.py script shows it at the beginning.)
+Add json files to folder json (create it first), their name will be used as ID, so make sure they are named after last object in db (If unsure add.py script shows it at the beginning.)
 
 Then simply run 
 
