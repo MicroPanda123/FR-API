@@ -6,7 +6,7 @@ The API for femboyroulette.xyz.
 Install the needed python modules for the api
 
 ```
- pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 After installing the requirements run the API with
@@ -14,6 +14,18 @@ After installing the requirements run the API with
 ```
 uvicorn main:app --reload
 ```
+
+## How to add objects to database
+
+Add json files to folder json, their name will be used as ID, so make sure they are named after last object in db (If unsure add.py script shows it at the beginning.)
+
+Then simply run 
+
+```
+python add.py
+```
+
+and follow instructions.
 
 ## How to fetch from the API:
 

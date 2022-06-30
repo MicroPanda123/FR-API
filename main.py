@@ -14,7 +14,7 @@ conn = sqlite3.connect('json.db')
 def read_root(response: Response):
     response.headers["Access-Control-Allow-Origin"] = "*"
     number = random.randint(1,29)
-    cur = conn.execute(f"SELECT json FROM jsons WHERE ID={number};")
+    cur = conn.execute(f"SELECT jsons FROM jsons WHERE ID={number};")
     img = json.load(cur.fetchall()[0])
     return img
 
